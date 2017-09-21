@@ -13,7 +13,7 @@ def GoodNight():
 		client.sendRemoteImage(random.choice(config.images), message=wish, thread_id=friend, thread_type=ThreadType.USER)
 		time.sleep(1)
 
-schedule.every().day.at("23:00").do(GoodNight)
+schedule.every().day.at("16:37").do(GoodNight)
 
 while True:
     schedule.run_pending()
